@@ -31,3 +31,10 @@ fields:
               fields:
                 -
                   import: image_gallery
+            teaser:
+              display: Teaser
+              instructions: 'Teaser hinzufügen'
+              icon: money-cashier-calculator
+              fields:
+                -
+                  import: teaser
