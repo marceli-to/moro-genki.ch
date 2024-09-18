@@ -1,0 +1,11 @@
+<article class="text">
+  {{ editor }}
+    {{ if type == 'text' }}
+      {{ text }}
+    {{ /if }}
+    {{ if type == 'image_gallery' }}
+      {{ partial:components/image_gallery }}
+    {{ /if }}
+  {{ /editor }}
+</article>
+

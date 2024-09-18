@@ -1,0 +1,17 @@
+<main role="main" class="site">
+  {{ if !is_homepage }}
+    <span class="bg-circles bg-circles--{{ [1, 2, 3] | random }}">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  {{ /if }}
+  {{ if visual }}
+    <div class="visual" style="background-image: url({{ visual:url }})"></div>
+  {{ /if }}
+  <div>
+    {{ partial:layout/inner }}
+      {{ template_content }}
+    {{ /partial:layout/inner }}
+  </div>
+</main>

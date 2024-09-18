@@ -1,0 +1,26 @@
+<li class="">
+  <a 
+    href="{{ url }}" 
+    class="{{ is_current || is_parent ? 'is-active' : '' }}"
+    target="{{ is_external ? '_blank' : '_self' }}"
+    title="{{ title }}">
+    {{ title }}
+  </a>
+  {{ if children }}
+    <ul>
+      <span>
+        {{ children }}
+          <li>
+            <a 
+              href="{{ url }}" 
+              class="{{ is_current || is_parent ? 'is-active' : '' }}"
+              target="{{ is_external ? '_blank' : '_self' }}"
+              title="{{ title }}">
+              {{ title }}
+            </a>
+          </li>
+        {{ /children }}
+      </span>
+    </ul>
+  {{ /if }}
+</li>

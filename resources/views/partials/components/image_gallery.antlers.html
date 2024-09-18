@@ -1,0 +1,11 @@
+<div class="image-wrapper grid-{{ image_element | count }}x1" data-reveal>
+  {{ image_element }}
+    <figure class="span">
+      {{ partial:media/image 
+        :image="image" 
+        class="w-full h-auto object-cover"
+        preset="focal-4-3" }}
+      <figcaption>{{ caption}}</figcaption>
+    </figure>
+  {{ /image_element }}
+</div>

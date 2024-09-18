@@ -1,0 +1,44 @@
+title: Teaser
+fields:
+  -
+    handle: teaser
+    field:
+      type: replicator
+      display: Teaser
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            teaser:
+              display: Teaser
+              instructions: 'Teaser hinzufügen'
+              icon: money-cashier-calculator
+              fields:
+                -
+                  handle: link
+                  field:
+                    collections:
+                      - pages
+                    type: link
+                    display: Link
+                -
+                  handle: front
+                  field:
+                    type: textarea
+                    display: Front
+                -
+                  handle: back
+                  field:
+                    type: textarea
+                    display: Back
+                -
+                  handle: color
+                  field:
+                    options:
+                      is-purple: Burgund
+                      is-rose: Rosa
+                      is-sand: Beige
+                      is-blue: Blau
+                    default: is-purple
+                    type: select
+                    display: Color

@@ -1,0 +1,7 @@
+/* @tailwind base;  */
+@tailwind components;
+@tailwind utilities;
+
+/* article.text + article.text {
+  @apply mt-24 lg:mt-48;
+} */

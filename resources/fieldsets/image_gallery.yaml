@@ -1,0 +1,26 @@
+title: Bildergalerie
+fields:
+  -
+    handle: image_element
+    field:
+      type: replicator
+      display: Bildelement
+      sets:
+        neue_set-gruppe:
+          display: 'Neue Set-Gruppe'
+          sets:
+            image_element:
+              display: Bildelement
+              fields:
+                -
+                  handle: image
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Bild
+                -
+                  handle: caption
+                  field:
+                    type: text
+                    display: Legende
