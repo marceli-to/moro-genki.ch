@@ -1,0 +1,24 @@
+title: Portrait
+fields:
+  -
+    handle: image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: Bild
+  -
+    handle: text
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - unorderedlist
+        - removeformat
+        - anchor
+        - h1
+      toolbar_mode: floating
+      remove_empty_nodes: true
+      type: bard
+      display: Text

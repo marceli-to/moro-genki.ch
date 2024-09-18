@@ -56,6 +56,13 @@ tabs:
                       fields:
                         -
                           import: code
+                    portrait:
+                      display: Portrait
+                      instructions: 'Portrait hinzufügen'
+                      icon: text-formatting-image-top
+                      fields:
+                        -
+                          import: portrait
   seo:
     display: SEO
     sections:

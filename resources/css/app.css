@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* article.text + article.text {
-  @apply mt-24 lg:mt-48;
-} */
+.portrait figure {
+  @apply mb-25;
+}
+
+.portrait img {
+  @apply !max-w-[300px];
+}
